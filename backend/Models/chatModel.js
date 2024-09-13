@@ -12,7 +12,7 @@ const chatModel = mongoose.Schema(
         isGroupChat: { type: Boolean, defaul: false },
         users: [
             {
-                type: mongopose.Schema.Types.ObjectId,
+                type: mongoose.Schema.Types.ObjectId,
                 ref: "User",
             }
         ],
@@ -24,7 +24,7 @@ const chatModel = mongoose.Schema(
             type: mongoose.Schema.Types.ObjectId,
             ref: "User",
         },
-    }
+    },
     {
         timestamps: true,
     }
